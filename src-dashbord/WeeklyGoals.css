@@ -1,0 +1,70 @@
+.weekly-goals {
+    padding: 20px;
+  }
+  
+  .days {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical alignment */
+  }
+  
+  .day-container {
+    margin-bottom: 20px; /* Space between each day container */
+  }
+  
+  .day-button {
+    padding: 10px 15px;
+    border: none;
+    background: linear-gradient(68.8deg, rgba(0, 0, 0, 0.95) 1.8%, rgb(0, 55, 79) 31.8%, rgb(9, 93, 134) 56.2%, rgb(15, 155, 217) 89%);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 50%; /* Full width for the button */
+  }
+  
+  .day-button:hover {
+    background-color: #9c4dcc;
+  }
+  
+  .day-button.active {
+    background-color: #9c4dcc;
+  }
+  
+  .task-input {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .task-input input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+  
+  .task-input button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #6a1b9a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .task-list li {
+    margin: 5px 0; /* Space between tasks */
+    background-color: #9eb5c4; /* Light background for tasks */
+    padding: 8px;
+    border-radius:5px;
+    width: 50%;
+    
+  }
+  
+  

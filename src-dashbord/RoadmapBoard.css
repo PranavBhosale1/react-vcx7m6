@@ -1,0 +1,75 @@
+/* TaskBoard (Roadmap Creation) Styling */
+.roadmap-creation {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 40px;
+    background-color: #d8edfb;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .roadmap-form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color:#00374f ;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #5b1582;
+  }
+  
+  .roadmap {
+    margin-top: 20px;
+  }
+  
+  .roadmap ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .roadmap ul li {
+    background-color: #d1c4e9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Image Display Styling */
+  .image-display {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .image-display img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+   
+  

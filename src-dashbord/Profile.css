@@ -1,0 +1,33 @@
+/* Profile.css */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .summary-section {
+    width: 70%;
+  }
+  
+  .profile-content {
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    margin: 15px 0;
+  }
+  
+  .roadmap-summary,
+  .progress-overview,
+  .shared-roadmaps,
+  .linked-resources {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  

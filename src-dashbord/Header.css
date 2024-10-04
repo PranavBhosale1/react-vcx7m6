@@ -1,0 +1,59 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(68.8deg, rgba(0, 0, 0, 0.95) 1.8%, rgb(0, 55, 79) 31.8%, rgb(9, 93, 134) 56.2%, rgb(15, 155, 217) 89%);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-left h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Right side styling */
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  
+  
+  /* Get Started Button */
+  .get-started-btn {
+    padding: 5px;
+    background-color: #f9f4f4;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 20px;
+    width: 100px;
+  }
+  .logout-btn {
+    padding: 5px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 20px;
+    width: 100px;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #f1f1f1;
+  }

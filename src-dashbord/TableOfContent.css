@@ -1,0 +1,44 @@
+/* TableOfContent.css */
+.table-of-content {
+    padding: 20px;
+  }
+  
+  .toc-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space between blocks */
+  }
+  
+  .toc-block {
+    width: 30%; /* Each block takes 30% width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px; /* Margin between blocks */
+    box-shadow: 2px 2px 5px #1f2225;
+  }
+  
+  .toc-block h3 {
+    margin-top: 0;
+  }
+  
+  .toc-block input[type="text"],
+  .toc-block input[type="datetime-local"] {
+    width: calc(100% - 20px); /* Full width for inputs */
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .toc-block button {
+    width: 100%;
+    padding: 5px;
+    background: linear-gradient(68.8deg, rgba(0, 0, 0, 0.95) 1.8%, rgb(0, 55, 79) 31.8%, rgb(9, 93, 134) 56.2%, rgb(15, 155, 217) 89%);;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toc-block button:hover {
+    background-color: #0056b3;
+  }
+  
