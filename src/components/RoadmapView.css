@@ -1,0 +1,220 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d7edfb; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker text color for better contrast */
+}
+
+.roadmap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subject-container,
+.topic-container,
+.manage-container {
+    background-color: #f0f0f0; /* Light background for form sections */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(8, 90, 130, 0.6), 0 0 20px rgba(255, 0, 128, 0.6); /* Neon glow around the div */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+    transition: box-shadow 0.3s ease;
+}
+
+.subject-container:hover,
+.topic-container:hover,
+.manage-container:hover {
+    box-shadow: 0 0 35px rgba(8, 90, 130, 1), 0 0 35px rgba(255, 0, 128, 1); /* Stronger glow on hover */
+}
+
+.subject-item,
+.topic-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 18px; /* Increased text size for topics */
+}
+
+/* Button Styles */
+.button,
+.upload-button,
+.edit-button {
+    padding: 10px 15px; /* Increased padding */
+    background-color: #007bff; /* Primary blue */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Neon glow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-size: 16px; /* Increased font size */
+    margin-left: 10px; /* Move button a bit to the right */
+}
+
+.button:hover,
+.upload-button:hover,
+.edit-button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 1); /* Stronger glow on hover */
+}
+
+.delete-button {
+    background-color: #dc3545;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.8); /* Neon red glow */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-size: 16px; /* Increased font size */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    box-shadow: 0 0 15px rgba(220, 53, 69, 1); /* Stronger red glow on hover */
+}
+
+.action-button {
+    margin-left: 5px;
+    padding: 10px 15px; /* Increased padding */
+    background-color: #28a745;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.8); /* Neon green glow */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-size: 16px; /* Increased font size */
+}
+
+.action-button:hover {
+    background-color: #218838;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 1); /* Stronger green glow on hover */
+}
+
+.topic-actions {
+    display: flex;
+}
+
+.completion-percentage {
+    margin-top: 20px;
+}
+
+.completion-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0; /* Light gray background for completion bar */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 5px; /* Space above completion bar */
+}
+
+.completion-fill {
+    height: 100%;
+    background-color: #007bff; /* Blue fill for completion */
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Blue neon glow */
+}
+
+/* Neon Gradient Box Styles */
+.readFile,
+.bundle,
+.concat,
+.fullBundle {
+    background: linear-gradient(135deg, #ff0080, #7400ff); /* Neon gradient effect */
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 15px rgba(116, 0, 255, 0.7); /* Neon-style shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.readFile:hover,
+.bundle:hover,
+.concat:hover,
+.fullBundle:hover {
+    box-shadow: 0 0 25px rgba(255, 0, 128, 1), 0 0 25px rgba(116, 0, 255, 1); /* Stronger neon glow on hover */
+}
+
+/* Input Styles */
+input[type="text"], /* Subject Name Input */
+input[type="text"].topic-name { /* Topic Name Input */
+    width: calc(100% - 20px); /* Full width with padding */
+    padding: 12px; /* Increased padding for comfort */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-size: 18px; /* Increased font size */
+    margin-bottom: 10px; /* Space between input fields */
+    background-color: #fff; /* White background for input */
+    transition: border 0.3s ease, background 0.3s ease; /* Transition for hover effects */
+}
+
+/* Change border and background color on focus */
+input[type="text"]:focus,
+input[type="text"].topic-name:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+    background-color: #f9f9f9; /* Slightly gray background on focus */
+}
+
+/* Add a hover effect for the input fields */
+input[type="text"]:hover,
+input[type="text"].topic-name:hover {
+    border-color: #007bff; /* Change border color on hover */
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+/* Dropdown Styles */
+select {
+    width: calc(100% - 30px); /* Full width with padding */
+    padding: 10px; /* Increased padding for comfort */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-size: 16px; /* Increased font size */
+    margin-bottom: 10px; /* Space between dropdown fields */
+    background-color: #fff; /* White background for dropdown */
+    transition: border 0.3s ease, background 0.3s ease; /* Transition for hover effects */
+}
+
+/* Change border and background color on focus */
+select:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+    background-color: #f9f9f9; /* Slightly gray background on focus */
+}
+
+/* Add a hover effect for the dropdown */
+select:hover {
+    border-color: #007bff; /* Change border color on hover */
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+/* Attachments Styles */
+.attachments {
+    margin-top: 10px;
+}
+
+.attachment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.remove-button {
+    background-color: #dc3545; /* Red color for remove button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.8); /* Neon red glow */
+}
+
+.remove-button:hover {
+    background-color: #c82333; /* Darker red for hover */
+}
